@@ -1,3 +1,31 @@
+let menuList = document.getElementById("menuList");
+
+    menuList.style.maxHeight = "0px";
+    
+    function togglemenu(){
+      
+      if(menuList.style.maxHeight =="0px")
+        {
+          menuList.style.maxHeight = "200px";
+        }
+      
+      else
+        {
+          menuList.style.maxHeight = "0px";
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 const wrapper = document.querySelector('.wrapper');
 const loginLink = document.querySelector('.login-link');
 const registerLink = document.querySelector('.register-link');
@@ -24,6 +52,10 @@ iconClose.addEventListener('click', ()=> {
 });
 
 
+
+
+
+
 // Loop through Array of Objects
 var objPeople = [
 	{ // Object @ 0 index
@@ -37,6 +69,10 @@ var objPeople = [
 	{ // Object @ 2 index
 		username: "chris",
 		password: "forever"
+	},
+	{
+	  username: "yunus",
+	  password: "artikov"
 	}
 
 ]

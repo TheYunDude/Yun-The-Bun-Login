@@ -4,22 +4,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Home - YunTheBun</title>
+  <title>Home - TheYunBun</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
   <header>
-    <h2 class="logo">YunTheBun</h2>
-    <nav class="navigation">
+    <div class="div-logo">
+      <h2 class="logo">YunTheBun</h2>
+    </div>
+    <div class="div-nav">
+      <ion-icon class="menu-icon" name="menu-outline" onclick="togglemenu()"></ion-icon>
+    </div>
+    
+  </header>
+  
+  <div class="navigation-mobile">
+    <nav id="menuList">
       <a href="#">Home</a>
       <a href="#">About</a>
       <a href="#">Servies</a>
       <a href="#">About</a>
       <button class="btnLogin-popup">Login</button>
     </nav>
-    
-  </header>
+  </div>
   
   <div class="wrapper">
     <span class="icon-close"><ion-icon name="close"></ion-icon></span>
@@ -87,7 +95,7 @@
   
   
   
-  
+    
   
   <script src="script.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
